@@ -1,0 +1,30 @@
+{
+  "name": "57test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio wdio.conf.js",
+    "percy-test-adv": "export PERCY_TOKEN=1f413cb07539c60380710f6898be99fdd833c206dac3b50d007e5d8e27cf98a3 && export PERCY_BRANCH=master && percy exec -- wdio wdio-adventure-percy.conf.js",
+    "percy-test-mag": "export PERCY_TOKEN=d7b9109c013ed8571bd04563ff5c406fea2d72a089cc2aaebc0a98bda45c8b85 && export PERCY_BRANCH=master && percy exec -- wdio wdio-magazine-percy.conf.js",
+    "test-forms": "wdio wdio-forms.conf.js",
+    "percy-test-adv-qa": "export PERCY_TOKEN=c74b717b5d46a6982612378ce66a33d3696830e9ac91f723c412a8d0bf9d6cf5 && export PERCY_BRANCH=master && percy exec -- wdio wdio-qa-adventure-percy.conf.js",
+    "percy-test-mag-qa": "export PERCY_TOKEN=2a62f284feb854b6989ee53287152aa6711df53da3f9facbb0df7149882a9647 && export PERCY_BRANCH=master && percy exec -- wdio wdio-qa-magazine-percy.conf.js"
+ 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@percy/webdriverio": "^1.0.4",
+    "@wdio/cli": "^6.1.16",
+    "@wdio/local-runner": "^6.1.16",
+    "@wdio/mocha-framework": "^6.1.14",
+    "@wdio/spec-reporter": "^6.1.14",
+    "@wdio/sync": "^6.1.14",
+    "chromedriver": "^83.0.0",
+    "selenium-standalone": "^6.17.0",
+    "wdio-chromedriver-service": "^6.0.3",
+    "webdriverio": "^6.1.16"
+  }
+}
